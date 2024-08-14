@@ -8,9 +8,13 @@ Various Cantonese datasets created by https://withlangpal.com using data provide
 
 A JSON map containing Cantonese words and their standard Jyutping romanization (alternatives are available below) as well as an array of English translations, ordered by usage frequency (based on Word List (Graded, with Translations) - Full_20211207)
 
+![Example 1](/images/frequency-example.png)
+
 2. yue-jyutping-conversion
 
 A JSON map to convert any Chinese characters into its appropriate Jyutping (most characters have more than 1 potential Jyutping conversion)
+
+![Example 2](/images/conversion-example.png)
 
 Run:
 
