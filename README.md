@@ -6,7 +6,7 @@ Various Cantonese datasets created by https://withlangpal.com using data provide
 
 1. mapped-yue-by-frequency
 
-A JSON map containing Cantonese words and their standard Jyutping romanization as well as an array of English translations, ordered by usage frequency (based on Word List (Graded, with Translations) - Full_20211207)
+A JSON map containing Cantonese words and their standard Jyutping romanization (alternatives are available below) as well as an array of English translations, ordered by usage frequency (based on Word List (Graded, with Translations) - Full_20211207)
 
 2. yue-jyutping-conversion
 
