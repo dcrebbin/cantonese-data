@@ -1,0 +1,23 @@
+const fs = require('fs');
+const SPACING = '    ';
+const convertToCharacterSet = (data) => {
+    const characterSetArray = [];
+    const dataObj = JSON.parse(data);
+    for (const [character, details] of Object.entries(dataObj)) {
+        const romanization = details.romanization;
+        const translations = details.translations.join('; ');
+
+        const characterSet = `${SPACING}new CharacterSet("${character}", "${romanization}", "${translations}")`;
+        characterSetArray.push(characterSet);
+    }
+    return characterSetArray.join(',\n');
+};
+
+const data = fs.readFileSync('./langpal/mapped-yue-by-frequency.json', 'utf8');
+const jsonlString = convertToCharacterSet(data);
+
+fs.writeFileSync('./langpal/hanzi-quest/CantoneseList.cs', `public static List<CharacterSet> LIST = new List<CharacterSet>()
+{
+${jsonlString}
+};
+`);
