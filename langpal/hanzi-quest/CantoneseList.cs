@@ -198,7 +198,6 @@ public static List<CharacterSet> LIST = new List<CharacterSet>()
     new CharacterSet("啦", "laa1", "(particle)"),
     new CharacterSet("啱", "ngaam1", "correct"),
     new CharacterSet("喂", "wai3", "Hey!; Hello"),
-    new CharacterSet("hai", "undefined", ""),
     new CharacterSet("喊", "haam3", "to cry"),
     new CharacterSet("喎", "wo3", "(particle)"),
     new CharacterSet("單車", "daan1-ce1", "bicycle"),
